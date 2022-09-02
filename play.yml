@@ -3,6 +3,10 @@
   gather_facts: true
   become: false
   tasks:
+    - name: env
+      debug:
+        msg: "ANSIBLE_HASHI_VAULT_ADDR: {{ ANSIBLE_HASHI_VAULT_ADDR }}"
+
     - name: debug
       debug:
         msg: "hashi_vault: {{ vault_test_var }}"
