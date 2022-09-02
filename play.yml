@@ -1,0 +1,8 @@
+- name: Vault test playbook
+  hosts: all        
+  gather_facts: true
+  become: false
+  tasks:
+    - name: debug
+      debug:
+        msg: "hashi_vault: {{ vault_test_var }}"
