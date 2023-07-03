@@ -1,0 +1,2 @@
+vault_url: 'https://<YOUR_VAULT_SERVER>'
+vault_test_var: "{{ lookup('community.hashi_vault.hashi_vault', 'secret=openshift/data/infra:test url={{ vault_url }} validate_certs=false') }}"
