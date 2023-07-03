@@ -3,6 +3,6 @@
   gather_facts: true
   become: false
   tasks:
-    - name: debug
-      debug:
+    - name: Show secret from hashicorp vault
+      ansible.builtin.debug:
         msg: "hashi_vault: {{ vault_test_var }}"
